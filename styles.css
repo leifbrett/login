@@ -1,0 +1,87 @@
+
+.main__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: #48abe0;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 5px #48abe0,
+                0 0 20px 7px #ebecca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.input-box {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    margin: 10px 0;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+}
+
+input[type="text"], input[type="password"] {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 80%;
+    height: 100%;
+    left: 15px;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 530;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 15px;
+}
+
+.lowertext {
+   font-size: 13px; 
+   position: absolute;
+   right: 70px;
+   top: 290px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  margin-top: 30px;
+}
+
+button:hover {
+    color: white;
+    background: rgba(255, 255, 255, .2);
+}
